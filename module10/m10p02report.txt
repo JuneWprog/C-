@@ -1,0 +1,43 @@
+Problem 2 Report:
+
+An integer overflow occurs when an attempt is made to store a value beyond this range in a signed integer.
+Since the value is too large to be stored in a 32-bit signed integer, the processor drops the high-order 
+bits in order to successfully store the value. An integer overflow can result in allocating far too little space and
+possibly resulting in a buffer overflow.
+
+MOV EAX, [ESP + 0x8]
+LEA EDI, [EAX + 0x24]
+PUSH EDI
+CALL msvcrt.malloc
+
+-----------------------------------------------------------------------
+<The sequence of events which will lead to integer overflow> 
+
+1. The first instruction is to take a parameter off the stack 
+[ESP + 0x8] and loads it into EAX. 
+
+2. The next insturction adds 0x24 to EAX and stores the result in EDI. 
+
+3. Use this final value as a single parameter to the memory aalocation routine malloc. 
+
+4. If the parameter on the stack is a signed integer, EAX contains a high number.
+
+This high number in EAX is close to the high range for a signed integer and 
+
+if an user add 0x24 to it, the integer overflows.    
+
+--------------------------------------------------------------------------
+<The sequence of events which will lead to compromising the heap> 
+
+Stack Parameter => 0xFFFFFFF5
+Arithmetic Operation => 0xFFFFFFF5 + 0x24 
+Arithmetic Result =>  0x100000019 (larger than 32 bits)
+Processor Truncates => 0x00000019
+
+1. We assume the parameter on the stack has a high value of 0xFFFFFFF5. 
+
+2. 0X19 bytes will be allocated by malloc. 
+
+3. A buffer overflow occurs if this size of small buffer tries to hold a large
+portion os user suplied input.    
+

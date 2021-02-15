@@ -1,0 +1,15 @@
+Problem 1 
+Heapover001.png                 shows disassembly code of main, two breakpoints are set.
+                                one after  the heap initialized by malloc, 
+                                the other after the strcpy, which write data in to the heap.
+
+Heapover002.png                 run heapover.exe with string 12*'A'.
+                                print out the memory address of heap.
+                                print the contents in the initialized heap.   
+
+Heapvover003.png                shows the heap after the long string is written in it. 
+                                system warning: the size of data written in heap past requested size.
+                                kernel sent a signal SIGTRAP, which terminated the program.
+
+The program heapover.exe crashes when the heap is modified by a long string. 
+It crashes because the size of the string is greater than the memory size we assigned to the heap. 

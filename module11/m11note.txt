@@ -1,0 +1,61 @@
+problem 5
+use ntp_client() to get seconds from the ntp server
+substract the seconds with TIME1970 = 2208988800L 
+use time.localtime(sec) convert seconds to structure.
+the data sent out is a tuple, on the udpclient side, 
+I sliced the tuple,to get riddle of "NTP Time :"
+take the rest of the tuple, (that is the time portion),
+ and then convert the time to local time. 
+
+
+problem 6
+python bhnet.py -l -p 9999 -c
+python bhnet.py -t localhost -p 9999
+ctrl -d
+echo -ne "GET/HTTP/1.1\r\nHost:www.google.com\r\n\r\n"|python bhnet.py -t www.google.com -p 80
+sudo python m11proxy.py 127.0.0.1 80 itss.biomea.com 80 True
+set m11tcpcli.py host=127.0.0.1
+
+Problem 7 
+1>Modify m11tcpcli.py  line 5  host ="itss.biomea.com" to host="127.0.0.1"  
+2>On one terminal run proxy program : sudo python m11proxy.py 127.0.0.1 80 itss.biomea.com 80 True
+3>open another terminal, run tcpclient: python m11tcpcli.py
+
+On the terminal running proxy, we received the traffic dump running on the tcp client side.
+First we received 58bytes from tcp client to itss.biomea, which is the request the tcp client
+sent out.
+Then, we received 331bytes from itss.biomea to the tcp client. The data dump shows the content of 
+the webpage sent from itss.biomea.  
+
+Problem 8
+set network:
+change 2virtual machines' network to lan segment 
+make sure they are on the same lan segment(ip scope).
+change one vm ip address to 192.168.100.130
+ifconfig (eth0) 192.168.100.130
+change connected network ipv4 to manual 192.168.100.130
+assign the same ip addr.  
+restart vm
+ssh-keygen to generate keys m11_rsa.key for authentication 
+copy keys to the m11 directory
+
+sudo python m11sshd.py 192.168.100.130 22
+
+on another vm : ssh -t hacker@192.168.100.130
+
+
+
+problem 9
+set network:
+change 2virtual machines' network to lan segment 
+make sure they are on the same lan segment(ip scope).
+change one vm ip address to 192.168.100.130
+ifconfig (eth0) 192.168.100.130
+change connected network ipv4 to manual 
+assign the same ip addr.  
+restart vm
+ssh-keygen to generate keys m11_rsa.key for authentication 
+copy keys to the m11 directory
+
+sudo python m11sshd.py 192.168.100.130 22
+on another vm : sudo python m11revsshc.py

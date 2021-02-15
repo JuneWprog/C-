@@ -1,0 +1,46 @@
+Problem 1 :
+
+The difference between Windows and Linux is that Windows will allow us to
+sniff all incoming packets regardless of protocol, whereas Linux forces us to specify that we are
+sniffing ICMP.
+-------------------------------------------------------------------------------------------
+The output when sniffer running on linux: 
+  
+user@ubuntu:~/git/jun-w/python/m12$ sudo python sniffer.py
+('E\x00\x00T\xcfv\x00\x00@\x01%\xd2\n\xbb\x88\xfd\n\xbb\xe6\xed\x00\x00VU"
+\xb4\x00\x01\x03w\xa7\\\x00\x00\x00\x00\x1dO\x00\x00\x00\x00\x00\x00\x10
+\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*
++,-./01234567', ('10.187.136.253', 0))
+user@ubuntu:~$ ping 10.187.136.253
+
+user@ubuntu:~/git/jun-w/python/m12$ sudo python sniffer.py
+('E\x00\x00T\x16\x99@\x00\xfc\x01\x0cO\n\x0c`\x0c\n\xbb\xe6\xed\x00\x00\x88\xfa"
+\xde\x00\x01;w\xa7\\\x00\x00\x00\x00\xaa\x7f\x08\x00\x00\x00\x00\x00\x10\x11\x12
+\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567', 
+('10.12.96.12', 0))
+user@ubuntu:~$ ping www.sait.ca
+
+------------------------------------------------------------------------------------------
+The output when sniffer running on Windows: 
+
+c:\py12>sniffer.py
+('Ex00x00x00xe4x00x00x80x01x00x00nx00x02x0fnx00x02x0fx08x00
+MZx00x01x00x01abcdefghijklmnopqrstuvwabcdefghi', ('10.0.2.15', 0))
+ping 10.0.2.15
+
+c:\py12>sniffer.py
+('Ex00x009x00xecx00x00x80x11x00x00nx00x02x0fnx00x02x03xc3x9f
+x005x00%x18Hxb4xe6x01x00x00x01x00x00x00x00x00x00x03wwwx04saitx
+02cax00x00x01x00x01', ('10.0.2.15', 0))
+ 
+ping www.sait.ca
+
+
+c:\py12>sniffer.py
+('E\x00\x00(\x033@\x00\x80\x06\x00\x00\n\x00\x02\x0fH\x15[\x1d\xc0!\x00P\r\x99\x
+ea)\x02E\x14)P\x14\x00\x00\xaf[\x00\x00', ('10.0.2.15', 0))
+
+ping 127.0.0.1
+
+
+

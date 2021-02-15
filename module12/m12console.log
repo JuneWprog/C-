@@ -1,0 +1,99 @@
+Problem2:
+Script started on Wed 10 Apr 2019 12:17:16 PM MDT
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ shutdown -h now[7Pifconfigsudo python m12disco.py 
+[sudo] password for user: 
+My IP: 10.187.136.134
+^Chost:10.187.128.95
+host:10.187.128.249
+host:10.187.128.151
+host:10.187.128.164
+host:10.187.128.99
+host:10.187.128.205
+host:10.187.128.33
+host:10.187.129.48
+host:10.187.128.238
+host:10.187.129.10
+host:10.187.129.13
+host:10.187.129.66
+host:10.187.128.247
+host:10.187.129.72
+host:10.187.129.54
+host:10.187.128.211
+host:10.187.129.25
+host:10.187.128.85
+host:10.187.129.50
+host:10.187.128.115
+host:10.187.130.59
+host:10.187.129.216
+host:10.187.129.129
+host:10.187.129.138
+host:10.187.129.124
+host:10.187.129.112
+host:10.187.129.90
+host:10.187.129.101
+host:10.187.129.151
+host:10.187.129.166
+host:10.187.130.89
+host:10.187.129.246
+host:10.187.130.83
+host:10.187.130.58
+host:10.187.130.32
+host:10.187.130.66
+host:10.187.129.213
+host:10.187.130.92
+host:10.187.130.91
+host:10.187.130.41
+host:10.187.129.191
+host:10.187.129.186
+host:10.187.130.145
+host:10.187.130.210
+host:10.187.130.189
+host:10.187.130.161
+host:10.187.130.213
+^Z
+[1]+  Stopped                 sudo python m12disco.py
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ exit
+There are stopped jobs.
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ exit
+
+Script done on Wed 10 Apr 2019 12:17:37 PM MDT
+
+
+Problem 3
+Script started on Wed 10 Apr 2019 12:28:28 PM MDT
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ sudo python m12disco.py [9Phutdown -h now[7Pifconfig[K[K[K[K[K[K[K[Kpyt[K[K[Ksudo python m12disco.py [10Pcript m12.logudo python m12disco.py [1P[1P[1P[1P[1P[1P[1P[1@1[1@2[1@d[1@e[1@c[1@o[1@d[1@e[C[C[C
+[sudo] password for user: 
+My IP: 10.187.136.134
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.134
+Proto: ICMP 10.187.136.231 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.253
+Proto: ICMP 10.187.136.23 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.23
+Proto: ICMP 10.187.136.250 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.250
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+^C]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ exit
+
+Script done on Wed 10 Apr 2019 12:29:33 PM MDT
+

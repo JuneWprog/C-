@@ -1,0 +1,65 @@
+Problem 3:
+Avoid using c_ubyte, c_ushort, c_ulong data types. Describe why as part of
+your report. Report different ICMP Type and ICMP Code values received, and explain them.
+
+If use c_ubyte, c_ushort data types, we need to import library ctypes  
+
+
+3 types of ICMP headers were received  with 1)ICMP Type 3  ICMP Code 3
+                                            Type 3:	Destination Unreachable
+                                            Code 3 : port is Unreachable
+
+                                            2)ICMP Type 3  ICMP Code 1
+                                            Type 3:	Destination Unreachable
+                                            Code 1 : host is Unreachable
+
+                                            3) ICMP Type 8 Code 0
+                                            Type 8 : echo
+                                            when another host on the network 
+                                            pings that local host.  
+we are looking for a type value of 3 and a code value of 3. This corresponds to
+the Destination Unreachable class of ICMP messages, and the code value of 3
+indicates that the Port Unreachable error has been caused,which indicates 
+a host is up but no port available to talk to.
+
+
+The output of m12decode.py 
+---------------------------------------------------------------------------------------------------
+Script started on Wed 10 Apr 2019 12:28:28 PM MDT
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ sudo python m12disco.py [9Phutdown -h now[7Pifconfig[K[K[K[K[K[K[K[Kpyt[K[K[Ksudo python m12disco.py [10Pcript m12.logudo python m12disco.py [1P[1P[1P[1P[1P[1P[1P[1@1[1@2[1@d[1@e[1@c[1@o[1@d[1@e[C[C[C
+[sudo] password for user: 
+My IP: 10.187.136.134
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.134
+Proto: ICMP 10.187.136.231 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.253
+Proto: ICMP 10.187.136.23 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.23
+Proto: ICMP 10.187.136.250 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.250
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+^C]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ exit
+
+Script done on Wed 10 Apr 2019 12:29:33 PM MDT

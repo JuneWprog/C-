@@ -1,0 +1,79 @@
+1. What is the difference between STDCALLFastLogHook() and FastLogHook()
+
+These two types of hooks use an assembly stub to transfer execution to a
+small body of hook code that can log a specific register value or memory
+location at hook time. These types of hooks are useful for hooking fre-
+quently called functions.When the hooks are hit and the logging functions 
+are triggered, they store the captured information in an allocated region 
+of memory that the FastLogHook object creates.The FastLogHook object 
+automatically sets up the assembly stub, which logs the values you want
+and overwrites the original instruction that you wish to hook with a jump to
+the stub. When you are constructing fast log hooks, you first define a hook
+point, and then you define the data points you wish to log.
+There is an additional flavor of FastLogHook , STDCALLFastLogHook , 
+which is adjusted for the STDCALL calling convention. 
+For the cdecl convention use the normal FastLogHook . 
+The usage of the two, however, is the same.
+
+-----------------------------------------------------------------------------------------------------
+
+2. What does function imm.getKnowledge() return? (is it an integer, a string, a dictionary...?)
+
+If it did not find the pickled_object, it returns None.
+Otherwise, it returns a pickled python object (character stream) associated with an identical id from the knowledge database.
+Pickling is a way to convert a python object (list, dict, etc.) into a character stream.
+
+    def getKnowledge(self,id):
+        """
+            Gets python object from the knowledge database.
+
+            @type  id: STRING
+            @param id: unique name tag of the object
+
+            @rtype:  PYTHON OBJECT
+            @return: Object retrieved from the knowledge database
+            """
+        pickled_object=debugger.get_knowledge(id)
+        #try:
+        if not pickled_object:
+            return None
+        return pickle.loads(pickled_object)
+
+         Name         = "hippie"
+
+    fast = imm.getKnowledge( Name )
+
+
+
+
+ Python pickle module is used for serializing and de-serializing a Python object structure. 
+Any object in Python can be pickled so that it can be saved on disk.
+ What pickle does is that it “serializes” the object first before writing it to file. 
+ The idea is that this character stream contains all the information necessary to reconstruct 
+ the object in another python script.
+
+-------------------------------------------------------------------------------------------------------------
+3. What is the second parameter to function imm.disasmBackward() ?
+
+nlines is the second parameter. It means umber of lines to disassemble forward the default value is 1.
+ 
+op = imm.disasmBackward( addr, 3) 
+def disasmBackward( self, address, nlines = 1, mode = DISASM_ALL):
+        """
+            disasm nlines backward from the given address
+
+            @type  Address: DWORD
+            @param Address: Address to disasm
+
+            @type  nlines: DWORD
+            @param nlines: (Optional, Def: 1) Number of lines to disassemble forward
+
+            @rtype:  opCode Object (Check libanalyze.py)
+            @return: Disassmbled Opcode
+            """
+        backward_address = debugger.disasm_backward( address, nlines )
+        op = opCode( self, backward_address )
+        op._getfromtuple( debugger.disasm( backward_address, mode ) )
+        return op
+
+

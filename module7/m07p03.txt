@@ -1,0 +1,35 @@
+00401410  /$ 55                           PUSH EBP
+00401411  |. 89E5                         MOV EBP,ESP
+00401413  |. 83EC 18                      SUB ESP,18
+00401416  |. 8B45 0C                      MOV EAX,DWORD PTR SS:[EBP+C]             ; |callprin.00401433
+00401419  |. 894424 08                    MOV DWORD PTR SS:[ESP+8],EAX             ; |
+0040141D  |. 8B45 08                      MOV EAX,DWORD PTR SS:[EBP+8]             ; |
+00401420  |. 894424 04                    MOV DWORD PTR SS:[ESP+4],EAX             ; |
+00401424  |. C70424 44504000              MOV DWORD PTR SS:[ESP],callprin.00405044 ; |ASCII "%s: 0x%08x
+"
+0040142B  |. E8 90260000                  CALL <JMP.&msvcrt.printf>                ; \printf
+00401430  |. 90                           NOP
+00401431  |. C9                           LEAVE
+
+-----------------------------------------------------------------------------------------------------------
+
+The Entry of the function of print_all
+00401410  /$ 55                           PUSH EBP
+F2 set breakpoint
+
+------------------------------------------------------------------------------------------------------------------
+The stack frame after the print_all() function:
+
+Call stack of main thread
+Address    Returns to    Procedure / arguments                 Called from                   Frame      Stack Dump
+0022FEFC   00401430      ? <JMP.&msvcrt.printf>                callprin.0040142B                        00405044 00404004 00401433
+0022FF00   00405044        format = "%s: 0x%08x
+"
+0022FF04   00404004        <%s> = "The address of main is "
+0022FF08   00401433        <%08x> = 401433
+0022FF1C   0040145D      ? callprin.00401410                   callprin.00401458                        00404004 00401433 0022FF68
+0022FF4C   00401236      callprin.00401433                     callprin.00401231             0022FF48   00000001 005A0EA8 005A1628
+0022FF6C   004012E5      ? callprin.004011A0                   callprin.004012E0             0022FF68   00000001 00000000 00000000
+
+argument: label                   00401410
+argument: addr                    004011A0

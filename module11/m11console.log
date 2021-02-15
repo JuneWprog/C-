@@ -1,0 +1,491 @@
+[*] Problem 1: 
+Script started on Wed 03 Apr 2019 12:47:28 AM MDT
+
+]0;user@ubuntu: ~/git/jun-w/python/m11[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m11[00m$ python mqqtcpcli.py[1Ptcpcli.py[1Ptcpcli.py1tcpcli.py1tcpcli.py
+HTTP/1.1 200 OK
+
+Date: Wed, 03 Apr 2019 06:47:44 GMT
+
+Server: Apache/2.2.17 (Linux/SUSE)
+
+Cache-Control: no-store, no-cache
+
+Connection: close
+
+Content-Type: text/html
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>ITSC203 echo page</title>
+</head>
+<body>
+
+<br>2019-04-03 00:47:44
+<br>198.48.161.216
+<p>params:</p>
+</body></html>
+
+]0;user@ubuntu: ~/git/jun-w/python/m11[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m11[00m$ exit
+
+Script done on Wed 03 Apr 2019 12:47:53 AM MDT
+
+
+
+
+
+[*]Problem 3: 
+
+Script started on Wed 03 Apr 2019 01:05:14 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python m11timed.py
+[*] UDP Listening on 127.0.0.1:2013
+^CTraceback (most recent call last):
+  File "m11timed.py", line 21, in <module>
+    udp, csocket = server.recvfrom(512)  
+KeyboardInterrupt
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 01:06:51 MDT
+
+
+Script started on Wed 03 Apr 2019 01:06:15 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ netcat -vlscript log33[3Pnetcat -lv[Ku 127.0.0.1 2013
+
+2019-04-03 07:06:29
+2019-04-03 07:06:33
+2019-04-03 07:06:35
+2019-04-03 07:06:36^C
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 01:06:46 MDT
+
+[*] Problem 4:
+Script started on Wed 03 Apr 2019 12:48:22 AM MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m11[00m$ m[Kpython m11timed.py
+[*] UDP Listening on 127.0.0.1:2013
+^CTraceback (most recent call last):
+  File "m11timed.py", line 21, in <module>
+    udp, csocket = server.recvfrom(512)  
+KeyboardInterrupt
+]0;user@ubuntu: ~/git/jun-w/python/m11[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m11[00m$ exit
+
+Script done on Wed 03 Apr 2019 12:51:28 AM MDT
+
+Script started on Wed 03 Apr 2019 00:51:03 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python m11udpc.py
+UTC Time  : 2019-04-03 06:51:11
+local time: 2019-04-03 00:51:11
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 00:51:35 MDT
+
+
+[*]Problem 5:
+Script started on Wed 03 Apr 2019 22:31:59 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python syn[K[K[KM[Km11synctimed.py 
+[*] UDP Listening on 127.0.0.1:2013
+^CTraceback (most recent call last):
+  File "m11synctimed.py", line 27, in <module>
+    udp, csocket = server.recvfrom(512)  
+KeyboardInterrupt
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 22:32:44 MDT
+
+Script started on Wed 03 Apr 2019 22:32:21 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python m11udpc.py
+SNTP Time : 2019-04-03 22:32:37
+local time: 2019-04-03 22:32:37
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 22:32:40 MDT
+
+
+[*]Problem 6:
+Script started on Wed 03 Apr 2019 10:07:42 MDT
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ 
+[K]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python bhnet.py -l -p 9999 -c
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "bhnet.py", line 101, in client_handler
+    cmd_bfr += client_sock.recv(1024)
+error: [Errno 104] Connection reset by peer
+
+^CTraceback (most recent call last):
+  File "bhnet.py", line 182, in <module>
+    main()
+  File "bhnet.py", line 178, in main
+    server_loop()
+  File "bhnet.py", line 118, in server_loop
+    client_sock, addr = server.accept()
+  File "/usr/lib/python2.7/socket.py", line 206, in accept
+    sock, addr = self._sock.accept()
+KeyboardInterrupt
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 10:56:50 MDT
+
+
+Script started on Wed 03 Apr 2019 10:07:20 MDT
+]0;user@ubuntu: ~user@ubuntu:~$ py[K[Kcd[K[Kpython bhnet.py -l -p 9999 -c
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pscript log6python bhnet.py -l -p 9999 -c
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd git/jun-w/python/m11
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pscript log66cd git/jun-w/python/m11
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python bhnet.py -t localhost -p 9999
+<BHP:#> 
+ls -al
+total 288
+drwxrwxr-x  2 user user  4096 Apr  3 10:06 .
+drwxrwxr-x 16 user user  4096 Mar 29 09:33 ..
+-rw-rw-r--  1 user user  3897 Mar 31 23:03 bhnet.py
+-rw-rw-r--  1 user user   974 Apr  3 00:47 log01
+-rw-rw-r--  1 user user   833 Apr  3 01:07 log04
+-rw-rw-r--  1 user user   882 Apr  3 01:07 log3
+-rw-rw-r--  1 user user     0 Apr  3 10:06 log6
+-rw-rw-r--  1 user user     0 Apr  3 10:05 log66
+-rw-rw-r--  1 user user 15360 Apr  3 00:04 log.doc
+-rw-rw-r--  1 user user  6222 Mar 29 10:37 m11p02report.txt
+-rw-rw-r--  1 user user   470 Apr  3 00:42 m11p06.txt
+-rw-rw-r--  1 user user  3422 Apr  3 09:58 m11p07.txt
+-rw-rw-r--  1 user user  5240 Apr  3 00:43 m11p10.py
+-rwxrwxr-x  1 user user  5367 Mar 31 23:06 m11proxy.py
+-rw-rw-r--  1 user user   880 Apr  3 00:04 m11revsshc.py
+-rw-rw-r--  1 user user   397 Apr  3 00:04 m11_rsa.key
+-rw-rw-r--  1 user user  1641 Apr  3 00:04 m11sshd.py
+-rwxrwxr-x  1 user user  1655 Mar 31 13:10 m11synctimed.py
+-rwxrwxr-x  1 user user   449 Mar 31 23:33 m11tcpcli.py
+-rwxrwxr-x  1 user user   786 Mar 29 12:58 m11tcpsrv.py
+-rwxrwxr-x  1 user user   927 Mar 29 12:13 m11timed.py
+-rwxrwxr-x  1 user user   431 Mar 29 12:38 m11udpc.py
+-rw-rw-r--  1 user user   174 Apr  3 10:06 typescript
+-rwxrwxr-x  1 user user   431 Mar 29 12:38 udpclient.py
+<BHP:#> 
+pwd
+/home/user/git/jun-w/python/m11
+<BHP:#> 
+^Z
+[1]+  Stopped                 python bhnet.py -t localhost -p 9999
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+There are stopped jobs.
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ echo -ne "GET/HTTP/1.1\r\nHost:www.google.co 
+m\r\n\r\n"|python bhnet.py -t www.google.com -p 80
+HTTP/1.0 400 Bad Request
+
+Content-Type: text/html; charset=UTF-8
+
+Referrer-Policy: no-referrer
+
+Content-Length: 1555
+
+Date: Wed, 03 Apr 2019 16:11:13 GMT
+
+
+
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+Exiting! sth went wrong. (tho, seriously, has anything gone right in your whole pathetic existence?)
+
+Script done on Wed 03 Apr 2019 10:25:50 MDT
+
+
+
+
+[*]Problem 7:
+
+Script started on Wed 03 Apr 2019 10:42:35 MDT
+
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ python m11tcpcli.py
+HTTP/1.1 200 OK
+
+Date: Wed, 03 Apr 2019 16:43:26 GMT
+
+Server: Apache/2.2.17 (Linux/SUSE)
+
+Cache-Control: no-store, no-cache
+
+Connection: close
+
+Content-Type: text/html
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>ITSC203 echo page</title>
+</head>
+<body>
+
+<br>2019-04-03 10:43:26
+<br>142.110.227.187
+<p>params:</p>
+</body></html>
+
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 10:43:45 MDT
+
+
+Script started on Wed 03 Apr 2019 10:41:01 MDT
+]0;user@ubuntu: ~user@ubuntu:~$ python bhnet.py -l -p 9999 -c
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pscript log6cd git/jun-w/python/m11
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho -ne "GET/HTTP/1.1\r\nHost:www.google.com\r\n\r\n"|python bhne
+et.py -t www.google.com -p 80[A[42Pcd git/jun-w/python/m11
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ su[K[K sudo python m11proxy.py 127.0.0.1 80 itss.b 
+iomea.com 80 True
+[sudo] password for user: 
+[*] Listening on 127.0.0.1:80
+
+
+
+[==>] Received incoming connection from 127.0.0.1:56234
+
+[==>] Received 58 bytes from localhost.
+0000   47 45 54 20 2F 63 67 69 2D 62 69 6E 2F 65 63 68    GET /cgi-bin/ech
+0010   6F 2E 63 67 69 20 48 54 54 50 53 2F 31 2E 31 0D    o.cgi HTTPS/1.1.
+0020   0A 48 6F 73 74 3A 20 69 74 73 73 2E 62 69 6F 6D    .Host: itss.biom
+0030   65 61 2E 63 6F 6D 0D 0A 0D 0A                      ea.com....
+[==>] Sent to remote.
+[<==] Received 332 bytes from remote.
+0000   48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D    HTTP/1.1 200 OK.
+0010   0A 44 61 74 65 3A 20 57 65 64 2C 20 30 33 20 41    .Date: Wed, 03 A
+0020   70 72 20 32 30 31 39 20 31 36 3A 34 33 3A 32 36    pr 2019 16:43:26
+0030   20 47 4D 54 0D 0A 53 65 72 76 65 72 3A 20 41 70     GMT..Server: Ap
+0040   61 63 68 65 2F 32 2E 32 2E 31 37 20 28 4C 69 6E    ache/2.2.17 (Lin
+0050   75 78 2F 53 55 53 45 29 0D 0A 43 61 63 68 65 2D    ux/SUSE)..Cache-
+0060   43 6F 6E 74 72 6F 6C 3A 20 6E 6F 2D 73 74 6F 72    Control: no-stor
+0070   65 2C 20 6E 6F 2D 63 61 63 68 65 0D 0A 43 6F 6E    e, no-cache..Con
+0080   6E 65 63 74 69 6F 6E 3A 20 63 6C 6F 73 65 0D 0A    nection: close..
+0090   43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 74 65    Content-Type: te
+00A0   78 74 2F 68 74 6D 6C 0D 0A 0D 0A 0A 3C 68 74 6D    xt/html.....<htm
+00B0   6C 3E 0A 3C 68 65 61 64 3E 0A 3C 6D 65 74 61 20    l>.<head>.<meta 
+00C0   63 68 61 72 73 65 74 3D 22 75 74 66 2D 38 22 3E    charset="utf-8">
+00D0   0A 3C 74 69 74 6C 65 3E 49 54 53 43 32 30 33 20    .<title>ITSC203 
+00E0   65 63 68 6F 20 70 61 67 65 3C 2F 74 69 74 6C 65    echo page</title
+00F0   3E 0A 3C 2F 68 65 61 64 3E 0A 3C 62 6F 64 79 3E    >.</head>.<body>
+0100   0A 0A 3C 62 72 3E 32 30 31 39 2D 30 34 2D 30 33    ..<br>2019-04-03
+0110   20 31 30 3A 34 33 3A 32 36 0A 3C 62 72 3E 31 34     10:43:26.<br>14
+0120   32 2E 31 31 30 2E 32 32 37 2E 31 38 37 0A 3C 70    2.110.227.187.<p
+0130   3E 70 61 72 61 6D 73 3A 3C 2F 70 3E 0A 3C 2F 62    >params:</p>.</b
+0140   6F 64 79 3E 3C 2F 68 74 6D 6C 3E 0A                ody></html>.
+[<==] Sent to localhost.
+[*] No more data. Closing connections.
+^CTraceback (most recent call last):
+  File "m11proxy.py", line 177, in <module>
+    main() 
+  File "m11proxy.py", line 175, in main
+    server_loop(local_host,local_port,remote_host,remote_port,receive_first)
+  File "m11proxy.py", line 139, in server_loop
+    client_socket, addr = server.accept()
+  File "/usr/lib/python2.7/socket.py", line 206, in accept
+    sock, addr = self._sock.accept()
+KeyboardInterrupt
+]0;user@ubuntu: ~/git/jun-w/python/m11user@ubuntu:~/git/jun-w/python/m11$ exit
+
+Script done on Wed 03 Apr 2019 10:43:59 MDT
+
+
+[*]Problem 8:
+
+Script started on 2019-04-03 08:35:44-0600
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ key[K[K[Kssh [K-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): m11_rsa.key
+m11_rsa.key already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in m11_rsa.key.
+Your public key has been saved in m11_rsa.key.pub.
+The key fingerprint is:
+SHA256:hdPPkM2/jPweniD21yWj/tQFO0WhdxyA1BUwieyQmPc ubuntu@ubuntu-VirtualBox
+The key's randomart image is:
++---[RSA 2048]----+
+|        o +.++==+|
+|       o * B ooo.|
+|        + O o...+|
+|         o E ..+.|
+|        S   o + .|
+|           . oo+o|
+|          o +.=+o|
+|         . o.=.o.|
+|           .o+*  |
++----[SHA256]-----+
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ g[Kcp m11[K[K[K[K[K[Kcd .[K/home/ubuntu/.shh
+bash: cd: /home/ubuntu/.shh: No such file or directory
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ cd /home/ubuntu/.shh[Ksh
+]0;ubuntu@ubuntu-VirtualBox: ~/.ssh[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/.ssh[00m$ cp *[Km11* /home/ubuntu/py11
+]0;ubuntu@ubuntu-VirtualBox: ~/.ssh[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/.ssh[00m$ ls[K[Kcd /home/ubuntu/py11
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ ls
+log8     log.odt       m11revsshc.py  m11_rsa.key.pub  typescript
+log.doc  m11pysshd.py  m11_rsa.key    m11sshd.py
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ ssh hacker@192.168.100.130
+The authenticity of host '192.168.100.130 (192.168.100.130)' can't be established.
+RSA key fingerprint is SHA256:xymU6SB5khsswp4PkXeEMdULzlaiSpyGM84Kw+eQWCw.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added '192.168.100.130' (RSA) to the list of known hosts.
+
+hacker@192.168.100.130's password: 
+shell request failed on channel 0
+
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ exit
+
+Script done on 2019-04-03 08:36:41-0600
+
+
+Script started on 2019-04-03 10:32:29-06:00
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# ping 192.168.100.130
+[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pifconfig eth0 192.168.100.131/24
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[Kssh -t hacker@192.168.100.130
+The authenticity of host '192.168.100.130 (192.168.100.130)' can't be established.
+RSA key fingerprint is SHA256:xymU6SB5khsswp4PkXeEMdULzlaiSpyGM84Kw+eQWCw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.100.130' (RSA) to the list of known hosts.
+
+hacker@192.168.100.130's password: 
+PTY allocation request failed on channel 0
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# exit
+
+Script done on 2019-04-03 10:33:11-06:00
+
+
+
+[*]Problem 9:
+Script started on 2019-04-03 08:28:41-0600
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ ke[K[Kssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): m11_rsa.key
+m11_rsa.key already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in m11_rsa.key.
+Your public key has been saved in m11_rsa.key.pub.
+The key fingerprint is:
+SHA256:JmQk9pGamM/39MJmWK14I+8bAvyX66Y/Whquu8Dr2fg ubuntu@ubuntu-VirtualBox
+The key's randomart image is:
++---[RSA 2048]----+
+|    o o.         |
+|   . +..         |
+|   o o+          |
+|  o.oo           |
+|   oo . S.       |
+| .  oo.oo..      |
+|  o  .+B=o       |
+|   * .+*%o.      |
+| .=.E+=&B=       |
++----[SHA256]-----+
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ cd /ubu[K[K[K[K/home/ubuntu/.ssh/
+]0;ubuntu@ubuntu-VirtualBox: ~/.ssh[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/.ssh[00m$ ls
+id_rsa  id_rsa.pub  known_hosts  m11_rsa.key  m11_rsa.key.pub
+]0;ubuntu@ubuntu-VirtualBox: ~/.ssh[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/.ssh[00m$ cp m11_rsa[K[K[K[K*.[K /home/ubuntu/py11
+]0;ubuntu@ubuntu-VirtualBox: ~/.ssh[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/.ssh[00m$ c[Kcp m11* /home/ubuntu/py11[1P /home/ubuntu/py11[1P /home/ubuntu/py11[1P /home/ubuntu/py11[1P /home/ubuntu/py11[1P/home/ubuntu/py11[1P /home/ubuntu/py11d /home/ubuntu/py11[C /home/ubuntu/py11
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/
+
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ sudo python m11sshd.py 192.168.100.130 22
+[sudo] password for ubuntu: 
+[+] Listening for connection...
+[+] Got a connection!
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:62: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  self.curve, Q_C_bytes
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:78: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  hm.add_string(self.Q_S.public_numbers().encode_point())
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:87: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  m.add_string(self.Q_S.public_numbers().encode_point())
+[+] Authenticated!
+ClientConnected
+Enter command: ls
+log8
+log88
+log.doc
+log.odt
+m11pysshd.py
+m11revsshc.py
+m11_rsa.key
+m11_rsa.key.pub
+m11sshd.py
+typescript
+
+
+Enter command: ls -l
+total 64
+-rw-r--r-- 1 ubuntu ubuntu     0 Apr  3 08:28 log8
+-rw-r--r-- 1 ubuntu ubuntu     0 Apr  3 08:31 log88
+-rw-rw-r-- 1 ubuntu ubuntu 15360 Apr  2 23:42 log.doc
+-rw-rw-r-- 1 ubuntu ubuntu 20879 Apr  2 23:42 log.odt
+-rw-rw-r-- 1 ubuntu ubuntu  1643 Apr  2 22:50 m11pysshd.py
+-rw-rw-r-- 1 ubuntu ubuntu   881 Apr  3 00:33 m11revsshc.py
+-rw------- 1 ubuntu ubuntu   397 Apr  3 08:31 m11_rsa.key
+-rw-r--r-- 1 ubuntu ubuntu   406 Apr  3 08:29 m11_rsa.key.pub
+-rw-r--r-- 1 ubuntu ubuntu  1641 Apr  2 22:16 m11sshd.py
+-rw-r--r-- 1 ubuntu ubuntu   186 Apr  3 08:28 typescript
+
+
+Enter command: [-] Caught exception: 
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ exit
+
+Script done on 2019-04-03 08:33:10-0600
+
+Script started on 2019-04-03 08:31:09-0600
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ pyt[K[K[Ksudo python rev[K[K[Km11revsshc.py 
+[sudo] password for ubuntu: 
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:39: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  m.add_string(self.Q_C.public_numbers().encode_point())
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:96: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  self.curve, Q_S_bytes
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:111: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  hm.add_string(self.Q_C.public_numbers().encode_point())
+Welcome to bh_ssh
+Traceback (most recent call last):
+  File "m11revsshc.py", line 24, in <module>
+    ssh_command('192.168.100.130', 'hacker', 'secret','ClientConnected')
+  File "m11revsshc.py", line 20, in ssh_command
+    ssh_session.send(str(e))
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/channel.py", line 801, in send
+    return self._send(s, m)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/channel.py", line 1180, in _send
+    raise socket.error("Socket is closed")
+socket.error: Socket is closed
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ exit
+
+Script done on 2019-04-03 08:33:07-0600
+
+[*]Problem 10:
+Script started on 2019-04-04 23:29:06-0600
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ ls |grep ptmxn -s ./pts/ptmx ./mknode /dev/ptmxc52[12Pcd /devscript log888[6Pcd py11ssh -T -a hacker@192.168.100.130udo python m11sshd.py 192.168.100.130 22[16Prevsshc.pyls[Ksudo python m11revsshc.pysshd.py 192.168.100.130 22
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Psh -T -a hacker@192.168.100.130cd py11[Kscript log888[6Pcd /devmknode /dev/ptmxc52ln -s ./pts/ptmx ./[6Ps |grep ptmx[K[K^C
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ 
+[K]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ python m11p10.py 192.168.100.130 -p 8080 -r 192.168.100.100.[K:80 --user justin --password
+Enter SSH password: 
+Connecting to ssh host 192.168.100.130:22 ...
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:39: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  m.add_string(self.Q_C.public_numbers().encode_point())
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:96: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  self.curve, Q_S_bytes
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:111: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  hm.add_string(self.Q_C.public_numbers().encode_point())
+*** Failed to connect to 192.168.100.130:22: AuthenticationException('Authentication failed.',)
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ exit
+
+Script done on 2019-04-04 23:30:38-0600

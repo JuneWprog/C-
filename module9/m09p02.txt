@@ -1,0 +1,18 @@
+Problem 2
+Practice injecting code using the code_injector.py from the book.
+Create one cmd.exe and one calc.exe process, use the cmd.exe as the process to inject, and the calc.exe as the process to kill.Run the script with appropriate parameters and demonstrate the victim process being killed.
+--------------------------------------------------------------------------------------------------------------------
+output of code_injector.py :
+
+$ python code_injector.py 440 1748
+[*] Remote thread successfully created with a thread ID of: 0x00000eb0
+[*] Process 1748 should not be running anymore!
+
+ 440:      is the pid of cmd.exe
+1748:      is the pid_to_kill calc.exe
+
+This program should  inject  shell code to the pid process.
+The shell code should send a killsignal to pid_to_kill. 
+However, during code injection, the pid process was terminated by injection.
+
+

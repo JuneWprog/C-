@@ -1,0 +1,32 @@
+Problem 4 (Grey Hat Python 8.2 p.115)
+ 
+A class file_fuzzer is defined. In this class, 5 methods are created,   _init_(), file_picker(),
+fuzz(), print_usage(), and main.
+
+In line 1~41, _init_() defines some global variables and assignes default values for the variables. 
+These global variables will be used in order to track information about the test iteration.   
+Also, they will be used in the test cases which will be mutation to the sample files. 
+
+Line 43~ 50  define the file_picker() function. This function basically uses functions that are
+built-in from Python. The purpose is to list the files in a directory and randomly pick one of 
+them for mutation.   
+
+Line 53~147 is the function fuzz(). In order to load target application in a debug and to monitor 
+and track for crashes. This method will create one thread for fulfilling each function. 
+
+step1>      check and make sure that a current fuzzing iteration isn’t already running.
+            If not, the self.running flag also will be set if the access violation handler is busy
+            compiling a crash report.   
+step2>      Once we have selected a document to mutate, call mutate_file() to generate a mutation for the file.
+step3>      Creat debugger thread and call start_debugger()  which merely fires up the document-parsing application and passes in the mutated document as a command-line argument. In The function "check_accessv" checks for an exception, save the information and details of crash, terminate process and then returned the saved data.
+step4>      We then wait in a tight loop for the  debugger thread to register the PID of the target application.
+step5>      Once we have the PID, we spawn the monitoring thread whose job is to make sure that we kill the
+            application after a reasonable amount of time. If the notify flag is set, it will send crash information to the 
+            given email address. 
+step6>      Once the moni-toring thread has started, we increment the iteration count and reenter our
+            main loop until it’s time to pick a new file and fuzz again!
+
+The main function will take 3 parameters, a path as the first parameter, ext and notify are the following 2 parameters. 
+Three options are ready to be selected. "-e " or "-x " or "-n" . If the commandline input correct,
+the fuzz() function will be executed, otherwise, the print_usage() will be executed to print the right 
+command format. 	     

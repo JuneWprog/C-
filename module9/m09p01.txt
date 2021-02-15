@@ -1,0 +1,47 @@
+m09 problem1:
+#Practice DLL injection. Use the dll_injector.py from the book. Start a process calc.exe and find its
+#process id. The dll to inject into the process is the ghp_inject.dll from the grey hat python website.
+#file ghp_inject.dll. This is a simple dll which opens a message box when loaded.Use the LoadLibrary() 
+#function call from kernel32.dll.Record the address kernel allocated for the DLL path.
+#Record the location of the LoadLibraryA() function.
+
+
+$ python dll_injector.py 3588 c:/m08/ghp_inject.dll
+[*]memory address for DLL: 0x02a50000
+[*]address of LoadLibraryA: 0x7629de65
+[*]Remote thread successfully created with a thread ID of: 0x00000828
+[*]VNC Connection now open and ready for action....
+
+
+The address kernel allocated for the DLL path: 0x02a50000
+The location of the LoadLibraryA() function  : 0x7629de65
+
+-----------------------------------------------------------------------------------------------------------------------
+What is the meaning of the values the following parameters are set to in dll_injector.py?
+
+PAGE_READWRITE =0X04:                                      0x04 :Enables read-only or read/write access to the committed region 
+                                                           of pages. If Data Execution Prevention is enabled, attempting to 
+                                                           execute code in the committed region results in an access violation
+.
+
+PROCESS_ALL_ACCESS( 0x000F0000 | 0x00100000 | 0xFFF ):     All possible access rights for a process object.
+
+VIRTUAL_MEM = ( 0x1000 | 0x2000 ):                         The type of memory allocation.
+                                                           MEM_COMMIT 0x1000:
+                                                           Allocates memory charges (from the overall size of memory and the paging
+                                                           files on disk) for the specified reserved memory pages. The function also 
+                                                           guarantees that when the caller later initially accesses the memory, the 
+                                                           contents will be zero. Actual physical pages are not allocated unless/until
+                                                           the virtual addresses are actually accessed. 
+                                                           MEM_RESERVE 0x2000:
+                                                           Reserves a range of the process's virtual address space without allocating
+                                                           any actual physical storage in memory or in the paging file on disk. 
+
+They are the settings to allocate enough memory to store the path to the DLL we are injecting 
+and then write out the path to the newly allocated memory space. 
+------------------------------------------------------------------------------------------------------------------------
+What is the purpose of the h_loadlib variable?
+
+h_loadlib  = kernel32.GetProcAddress(h_kernel32,"LoadLibraryA")
+It takes the memory address of "LoadLibraryA" ,so that we can point the subsequent 
+CreateRemoteThread() call to its memory location.

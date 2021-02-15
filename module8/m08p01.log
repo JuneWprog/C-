@@ -1,0 +1,378 @@
+
+          File 'C:\Program Files\Mozilla Firefox\firefox.exe'
+          [00:37:22] New process with ID 00000990 created
+          Main thread with ID 00000994 created
+012519F0  New thread with ID 000009A0 created
+7787FBBF  New thread with ID 000009A8 created
+6893F2F0  New thread with ID 000009B0 created
+6A15DBF0  New thread with ID 000009B4 created
+6DFAE130  New thread with ID 000009B8 created
+6DFAE130  New thread with ID 000009BC created
+6DFAE130  New thread with ID 000009C0 created
+6DFAE130  New thread with ID 000009C4 created
+6DFAE130  New thread with ID 000009C8 created
+6DFAE130  New thread with ID 000009CC created
+751C62CE  New thread with ID 000009D0 created
+77880287  New thread with ID 000009E4 created
+6DFAE130  New thread with ID 000009E8 created
+6DFAE130  New thread with ID 000009EC created
+77880287  New thread with ID 000009F0 created
+6A15DBF0  New thread with ID 000009F4 created
+6A15DBF0  New thread with ID 00000A00 created
+6DFAE130  New thread with ID 00000A14 created
+6DFAE130  New thread with ID 00000A18 created
+77880287  New thread with ID 00000A2C created
+75FDD754  New thread with ID 00000A30 created
+6DFAE130  New thread with ID 00000A34 created
+6DFAE130  New thread with ID 00000A38 created
+6DFAE130  New thread with ID 00000A48 created
+6DFAE130  New thread with ID 00000A4C created
+742127E1  New thread with ID 00000A5C created
+6DFAE130  New thread with ID 00000A6C created
+7786F718  New thread with ID 00000A78 created
+6DFAE130  New thread with ID 00000A80 created
+6A15DBF0  New thread with ID 00000AB8 created
+6DFAE130  New thread with ID 00000AD8 created
+6DFAE130  New thread with ID 00000B38 created
+6DFAE130  New thread with ID 00000B40 created
+6DFAE130  New thread with ID 00000B48 created
+77880287  New thread with ID 00000B4C created
+6DFAE130  New thread with ID 00000B54 created
+6DFAE130  New thread with ID 00000B64 created
+6DFAE130  New thread with ID 00000B6C created
+6DFAE130  New thread with ID 00000B70 created
+6DFAE130  New thread with ID 00000B78 created
+6DFAE130  New thread with ID 00000B7C created
+6DFAE130  New thread with ID 00000B88 created
+6DFAE130  New thread with ID 00000B98 created
+6DFAE130  New thread with ID 00000BA4 created
+6DFAE130  New thread with ID 00000BA8 created
+6DFAE130  New thread with ID 00000BCC created
+6DFAE130  New thread with ID 00000BE0 created
+6DFAE130  New thread with ID 00000BEC created
+6DFAE130  New thread with ID 00000BFC created
+6DFAE130  New thread with ID 00000C88 created
+75FDD754  New thread with ID 00000C94 created
+6DFAE130  New thread with ID 00000C9C created
+6DFAE130  New thread with ID 00000CA4 created
+6DFAE130  New thread with ID 00000CA8 created
+6DFAE130  New thread with ID 00000CAC created
+6DFAE130  New thread with ID 00000CD4 created
+6DFAE130  New thread with ID 00000D0C created
+6DFAE130  New thread with ID 00000D68 created
+6DFAE130  New thread with ID 00000E18 created
+6DFAE130  New thread with ID 00000E78 created
+6DFAE130  New thread with ID 00000E88 created
+778EEC83  New thread with ID 00000F30 created
+0BADF00D  [*] Attaching to firefox.exe with PID: 2448
+01240000  Modules C:\Program Files\Mozilla Firefox\firefox.exe
+67D40000  Modules C:\Windows\system32\api-ms-win-downlevel-shlwapi-l2-1-0.dll
+67D50000  Modules C:\PROGRA~1\MOZILL~1\nssckbi.dll
+67DB0000  Modules C:\Program Files\Mozilla Firefox\freebl3.dll
+67E30000  Modules C:\Program Files\Mozilla Firefox\softokn3.dll
+68010000  Modules C:\Windows\system32\d2d1.dll
+68360000  Modules C:\Windows\System32\Wpc.dll
+68770000  Modules C:\Windows\system32\mscms.dll
+687F0000  Modules C:\Windows\system32\dwrite.dll
+68930000  Modules C:\Program Files\Mozilla Firefox\xul.dll
+6DCE0000  Modules C:\Program Files\Mozilla Firefox\nss3.dll
+            CRC changed, discarding .udd data
+6DF70000  Modules C:\Program Files\Mozilla Firefox\ucrtbase.DLL
+6ECE0000  Modules C:\Windows\System32\winrnr.dll
+6ECF0000  Modules C:\Windows\system32\pnrpnsp.dll
+6ED10000  Modules C:\Windows\system32\napinsp.dll
+6EDA0000  Modules C:\Windows\system32\credui.dll
+6EDD0000  Modules C:\Program Files\Mozilla Firefox\lgpllibs.dll
+6EDE0000  Modules C:\Windows\system32\WSOCK32.dll
+6EDF0000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-multibyte-l1-1-0.dll
+6EE00000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-utility-l1-1-0.dll
+6EE10000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-environment-l1-1-0.dll
+6EE20000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-filesystem-l1-1-0.dll
+6EE30000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-time-l1-1-0.dll
+6EE40000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-math-l1-1-0.dll
+6EE50000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-locale-l1-1-0.dll
+6EE60000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-convert-l1-1-0.dll
+6EE70000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-stdio-l1-1-0.dll
+6EE80000  Modules C:\Program Files\Mozilla Firefox\MSVCP140.dll
+6EEF0000  Modules C:\Windows\system32\dbghelp.dll
+6FD00000  Modules C:\Windows\system32\actxprxy.dll
+70150000  Modules C:\Windows\system32\api-ms-win-downlevel-advapi32-l2-1-0.dll
+703B0000  Modules C:\Windows\system32\explorerframe.dll
+70520000  Modules C:\Windows\system32\d3d11.dll
+706A0000  Modules C:\Windows\system32\dxgi.dll
+70930000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-heap-l1-1-0.dll
+70940000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-string-l1-1-0.dll
+70950000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-synch-l1-2-0.dll
+70960000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-file-l2-1-0.dll
+70970000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-timezone-l1-1-0.dll
+70980000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-file-l1-2-0.dll
+70990000  Modules C:\Program Files\Mozilla Firefox\mozglue.dll
+71350000  Modules C:\Windows\system32\rasadhlp.dll
+71360000  Modules C:\Windows\system32\wbem\wbemsvc.dll
+71450000  Modules C:\Windows\system32\wbem\wbemprox.dll
+71460000  Modules C:\Windows\system32\NTDSAPI.dll
+71480000  Modules C:\Windows\system32\wbem\fastprox.dll
+717F0000  Modules C:\Windows\system32\wbemcomn.dll
+72100000  Modules C:\Windows\System32\fwpuclnt.dll
+72210000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-processthreads-l1-1-1.dll
+72220000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-core-localization-l1-2-0.dll
+72230000  Modules C:\Program Files\Mozilla Firefox\api-ms-win-crt-runtime-l1-1-0.dll
+72240000  Modules C:\Program Files\Mozilla Firefox\VCRUNTIME140.dll
+739E0000  Modules C:\Windows\system32\NLAapi.dll
+73B00000  Modules C:\Windows\system32\AUDIOSES.DLL
+73C10000  Modules C:\Windows\system32\WINMM.dll
+73DF0000  Modules C:\Windows\system32\AVRT.dll
+73F50000  Modules C:\Windows\system32\samcli.dll
+73F70000  Modules C:\Windows\system32\netutils.dll
+741C0000  Modules C:\Windows\system32\XmlLite.dll
+741F0000  Modules C:\Windows\system32\dwmapi.dll
+74210000  Modules C:\Windows\System32\MMDevApi.dll
+742A0000  Modules C:\Windows\system32\DUser.dll
+742D0000  Modules C:\Windows\system32\DUI70.dll
+74530000  Modules C:\Windows\system32\UxTheme.dll
+74570000  Modules C:\Windows\System32\PROPSYS.dll
+74670000  Modules C:\Windows\system32\SAMLIB.dll
+746B0000  Modules C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.24380_none_2b2053e245779417\comctl32.dll
+74D10000  Modules C:\Windows\System32\wshtcpip.dll
+74D20000  Modules C:\Windows\system32\dhcpcsvc.DLL
+74D40000  Modules C:\Windows\system32\WTSAPI32.dll
+74D50000  Modules C:\Windows\system32\ntmarta.dll
+74D80000  Modules C:\Windows\system32\WINNSI.DLL
+74D90000  Modules C:\Windows\system32\IPHLPAPI.DLL
+74DB0000  Modules C:\Windows\system32\VERSION.dll
+74F90000  Modules C:\Windows\system32\rsaenh.dll
+75080000  Modules C:\Windows\system32\Dnsapi.dll
+751B0000  Modules C:\Windows\System32\wship6.dll
+751C0000  Modules C:\Windows\System32\mswsock.dll
+75200000  Modules C:\Windows\system32\CRYPTSP.dll
+75400000  Modules C:\Windows\System32\wevtapi.dll
+75560000  Modules C:\Windows\system32\Secur32.dll
+756A0000  Modules C:\Windows\system32\SSPICLI.DLL
+756C0000  Modules C:\Windows\system32\CRYPTBASE.dll
+75730000  Modules C:\Windows\system32\apphelp.dll
+75780000  Modules C:\Windows\system32\WINSTA.dll
+757B0000  Modules C:\Windows\system32\RpcRtRemote.dll
+75820000  Modules C:\Windows\system32\profapi.dll
+            Invalid or compressed Image Export Directory
+75830000  Modules C:\Windows\system32\MSASN1.dll
+75840000  Modules C:\Windows\system32\WINTRUST.dll
+75870000  Modules C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll
+75880000  Modules C:\Windows\system32\CRYPT32.dll
+759B0000  Modules C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll
+759C0000  Modules C:\Windows\system32\DEVOBJ.dll
+759E0000  Modules C:\Windows\system32\KERNELBASE.dll
+75AC0000  Modules C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll
+75AD0000  Modules C:\Windows\system32\CFGMGR32.dll
+75B00000  Modules C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll
+75B10000  Modules C:\Windows\system32\api-ms-win-downlevel-ole32-l1-1-0.dll
+75B20000  Modules C:\Windows\system32\USERENV.dll
+75B40000  Modules C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+75B50000  Modules C:\Windows\system32\psapi.dll
+75B60000  Modules C:\Windows\system32\RPCRT4.dll
+75C10000  Modules C:\Windows\system32\WININET.dll
+75E00000  Modules C:\Windows\system32\MSCTF.dll
+75ED0000  Modules C:\Windows\system32\WLDAP32.dll
+75F20000  Modules C:\Windows\system32\CLBCatQ.DLL
+75FB0000  Modules C:\Windows\system32\ole32.dll
+76110000  Modules C:\Windows\system32\GDI32.dll
+76160000  Modules C:\Windows\system32\OLEAUT32.dll
+76200000  Modules C:\Windows\system32\user32.dll
+762D0000  Modules C:\Windows\system32\ADVAPI32.dll
+76400000  Modules C:\Windows\system32\iertutil.dll
+76640000  Modules C:\Windows\system32\kernel32.dll
+76720000  Modules C:\Windows\system32\normaliz.DLL
+76730000  Modules C:\Windows\SYSTEM32\sechost.dll
+76750000  Modules C:\Windows\system32\LPK.dll
+76760000  Modules C:\Windows\system32\USP10.dll
+76950000  Modules C:\Windows\system32\SHLWAPI.dll
+769B0000  Modules C:\Windows\system32\SETUPAPI.dll
+76B50000  Modules C:\Windows\system32\SHELL32.dll
+777A0000  Modules C:\Windows\system32\msvcrt.dll
+77850000  Modules C:\Windows\SYSTEM32\ntdll.dll
+779D0000  Modules C:\Windows\system32\NSI.dll
+779E0000  Modules C:\Windows\system32\IMM32.DLL
+77A00000  Modules C:\Windows\system32\WS2_32.dll
+77883C48  [00:37:24] Attached process paused at ntdll.DbgBreakPoint
+0BADF00D  [*] Hooks set, continuing process.
+0BADF00D  [*] nss3.PR_Write hooked at: 0x6ddf27b0
+0BADF00D  [*] Hooks set, continuing process.
+          [00:37:26] Thread 00000F30 terminated, exit code 0
+          [00:37:26] Thread 00000D0C terminated, exit code 0
+          [00:37:27] Thread 00000CA8 terminated, exit code 0
+          [00:37:27] Thread 00000CD4 terminated, exit code 0
+          [00:37:27] Thread 00000CAC terminated, exit code 0
+          [00:37:28] Thread 00000CA4 terminated, exit code 0
+          [*]Hooks set, press F9 to continue the process.
+          [00:37:36] Thread 00000BE0 terminated, exit code 0
+          [00:37:36] Thread 00000BFC terminated, exit code 0
+6DFAE130  New thread with ID 00000F94 created
+759E845D  [00:37:51] Exception 406D1388
+759E845D  [00:37:55] Exception 406D1388
+          [00:37:56] Thread 00000F94 terminated, exit code 0
+759E845D  [00:37:56] Debug string: 1552631876255	Toolkit.Telemetry	WARN	TelemetryStorage::_scanArchive - have seen this id before: 4a7e3487-db99-4d55-864d-f4fab0be1c33, overwrite: false
+6DFAE130  New thread with ID 00000FA0 created
+759E845D  [00:37:56] Exception 406D1388
+759E845D  [00:37:56] Exception 406D1388
+759E845D  [00:37:59] Debug string: [JavaScript Warning: "Key event not available on some keyboard layouts: key=“i” modifiers=“accel,alt,shift” id=“key_browserToolbox”" {file: "chrome://browser/content/browser.xul" line: 0}]
+          [00:37:59] Thread 00000B4C terminated, exit code 0
+          [00:38:03] Thread 00000A2C terminated, exit code 0
+77880287  New thread with ID 00000FB4 created
+6DFAE130  New thread with ID 00000FBC created
+759E845D  [00:38:06] Exception 406D1388
+759E845E  [00:38:11] Single step event at KERNELBA.759E845E
+759E845D  [00:38:12] Exception 406D1388
+6DFAE130  New thread with ID 00000804 created
+759E845D  [00:38:20] Exception 406D1388
+759E845D  [00:38:25] Exception 406D1388
+6DFAE130  New thread with ID 00000468 created
+759E845D  [00:38:26] Exception 406D1388
+759E845D  [00:38:30] Exception 406D1388
+6DFAE130  New thread with ID 00000358 created
+759E845D  [00:38:30] Exception 406D1388
+759E845D  [00:38:34] Exception 406D1388
+6DFAE130  New thread with ID 00000884 created
+759E845D  [00:38:34] Exception 406D1388
+759E845D  [00:38:34] Exception 406D1388
+          [00:38:35] Thread 00000468 terminated, exit code 0
+          [00:38:35] Thread 00000804 terminated, exit code 0
+          [00:38:35] Thread 00000884 terminated, exit code 0
+          [00:38:35] Thread 00000358 terminated, exit code 0
+          [00:38:35] Thread 00000FA0 terminated, exit code 0
+759E845D  [00:38:36] Debug string: [JavaScript Error: "The character encoding of the HTML document was not declared. The document will render with garbled text in some browser configurations if the document contains characters from outside the US-ASCII range. The c
+759E845D  [00:38:36] Debug string: [JavaScript Error: "[Exception... "Favicon at "https://itss.biomea.com/favicon.ico" failed to load: Not Found."  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource:///modules/FaviconLoader.jsm :: onStopRequ
+6DFAE130  New thread with ID 00000BD0 created
+759E845D  [00:38:57] Exception 406D1388
+759E845D  [00:38:57] Exception 406D1388
+          [00:38:57] Thread 00000BD0 terminated, exit code 0
+6DFAE130  New thread with ID 00000C14 created
+759E845D  [00:38:59] Exception 406D1388
+759E845E  [00:39:01] Single step event at KERNELBA.759E845E
+759E845D  [00:39:02] Exception 406D1388
+01240000  Unload C:\Program Files\Mozilla Firefox\firefox.exe
+67D40000  Unload C:\Windows\system32\api-ms-win-downlevel-shlwapi-l2-1-0.dll
+67D50000  Unload C:\PROGRA~1\MOZILL~1\nssckbi.dll
+67DB0000  Unload C:\Program Files\Mozilla Firefox\freebl3.dll
+67E30000  Unload C:\Program Files\Mozilla Firefox\softokn3.dll
+68010000  Unload C:\Windows\system32\d2d1.dll
+68360000  Unload C:\Windows\System32\Wpc.dll
+68770000  Unload C:\Windows\system32\mscms.dll
+687F0000  Unload C:\Windows\system32\dwrite.dll
+68930000  Unload C:\Program Files\Mozilla Firefox\xul.dll
+6DCE0000  Unload C:\Program Files\Mozilla Firefox\nss3.dll
+6DF70000  Unload C:\Program Files\Mozilla Firefox\ucrtbase.DLL
+6ECE0000  Unload C:\Windows\System32\winrnr.dll
+6ECF0000  Unload C:\Windows\system32\pnrpnsp.dll
+6ED10000  Unload C:\Windows\system32\napinsp.dll
+6EDA0000  Unload C:\Windows\system32\credui.dll
+6EDD0000  Unload C:\Program Files\Mozilla Firefox\lgpllibs.dll
+6EDE0000  Unload C:\Windows\system32\WSOCK32.dll
+6EDF0000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-multibyte-l1-1-0.dll
+6EE00000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-utility-l1-1-0.dll
+6EE10000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-environment-l1-1-0.dll
+6EE20000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-filesystem-l1-1-0.dll
+6EE30000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-time-l1-1-0.dll
+6EE40000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-math-l1-1-0.dll
+6EE50000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-locale-l1-1-0.dll
+6EE60000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-convert-l1-1-0.dll
+6EE70000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-stdio-l1-1-0.dll
+6EE80000  Unload C:\Program Files\Mozilla Firefox\MSVCP140.dll
+6EEF0000  Unload C:\Windows\system32\dbghelp.dll
+6FD00000  Unload C:\Windows\system32\actxprxy.dll
+70150000  Unload C:\Windows\system32\api-ms-win-downlevel-advapi32-l2-1-0.dll
+703B0000  Unload C:\Windows\system32\explorerframe.dll
+70520000  Unload C:\Windows\system32\d3d11.dll
+706A0000  Unload C:\Windows\system32\dxgi.dll
+70930000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-heap-l1-1-0.dll
+70940000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-string-l1-1-0.dll
+70950000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-synch-l1-2-0.dll
+70960000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-file-l2-1-0.dll
+70970000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-timezone-l1-1-0.dll
+70980000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-file-l1-2-0.dll
+70990000  Unload C:\Program Files\Mozilla Firefox\mozglue.dll
+71350000  Unload C:\Windows\system32\rasadhlp.dll
+71360000  Unload C:\Windows\system32\wbem\wbemsvc.dll
+71450000  Unload C:\Windows\system32\wbem\wbemprox.dll
+71460000  Unload C:\Windows\system32\NTDSAPI.dll
+71480000  Unload C:\Windows\system32\wbem\fastprox.dll
+717F0000  Unload C:\Windows\system32\wbemcomn.dll
+72100000  Unload C:\Windows\System32\fwpuclnt.dll
+72210000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-processthreads-l1-1-1.dll
+72220000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-core-localization-l1-2-0.dll
+72230000  Unload C:\Program Files\Mozilla Firefox\api-ms-win-crt-runtime-l1-1-0.dll
+72240000  Unload C:\Program Files\Mozilla Firefox\VCRUNTIME140.dll
+739E0000  Unload C:\Windows\system32\NLAapi.dll
+73B00000  Unload C:\Windows\system32\AUDIOSES.DLL
+73C10000  Unload C:\Windows\system32\WINMM.dll
+73DF0000  Unload C:\Windows\system32\AVRT.dll
+73F50000  Unload C:\Windows\system32\samcli.dll
+73F70000  Unload C:\Windows\system32\netutils.dll
+741C0000  Unload C:\Windows\system32\XmlLite.dll
+741F0000  Unload C:\Windows\system32\dwmapi.dll
+74210000  Unload C:\Windows\System32\MMDevApi.dll
+742A0000  Unload C:\Windows\system32\DUser.dll
+742D0000  Unload C:\Windows\system32\DUI70.dll
+74530000  Unload C:\Windows\system32\UxTheme.dll
+74570000  Unload C:\Windows\System32\PROPSYS.dll
+74670000  Unload C:\Windows\system32\SAMLIB.dll
+746B0000  Unload C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.24380_none_2b2053e245779417\comctl32.dll
+74D10000  Unload C:\Windows\System32\wshtcpip.dll
+74D20000  Unload C:\Windows\system32\dhcpcsvc.DLL
+74D40000  Unload C:\Windows\system32\WTSAPI32.dll
+74D50000  Unload C:\Windows\system32\ntmarta.dll
+74D80000  Unload C:\Windows\system32\WINNSI.DLL
+74D90000  Unload C:\Windows\system32\IPHLPAPI.DLL
+74DB0000  Unload C:\Windows\system32\VERSION.dll
+74F90000  Unload C:\Windows\system32\rsaenh.dll
+75080000  Unload C:\Windows\system32\Dnsapi.dll
+751B0000  Unload C:\Windows\System32\wship6.dll
+751C0000  Unload C:\Windows\System32\mswsock.dll
+75200000  Unload C:\Windows\system32\CRYPTSP.dll
+75400000  Unload C:\Windows\System32\wevtapi.dll
+75560000  Unload C:\Windows\system32\Secur32.dll
+756A0000  Unload C:\Windows\system32\SSPICLI.DLL
+756C0000  Unload C:\Windows\system32\CRYPTBASE.dll
+75730000  Unload C:\Windows\system32\apphelp.dll
+75780000  Unload C:\Windows\system32\WINSTA.dll
+757B0000  Unload C:\Windows\system32\RpcRtRemote.dll
+75820000  Unload C:\Windows\system32\profapi.dll
+75830000  Unload C:\Windows\system32\MSASN1.dll
+75840000  Unload C:\Windows\system32\WINTRUST.dll
+75870000  Unload C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll
+75880000  Unload C:\Windows\system32\CRYPT32.dll
+759B0000  Unload C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll
+759C0000  Unload C:\Windows\system32\DEVOBJ.dll
+759E0000  Unload C:\Windows\system32\KERNELBASE.dll
+75AC0000  Unload C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll
+75AD0000  Unload C:\Windows\system32\CFGMGR32.dll
+75B00000  Unload C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll
+75B10000  Unload C:\Windows\system32\api-ms-win-downlevel-ole32-l1-1-0.dll
+75B20000  Unload C:\Windows\system32\USERENV.dll
+75B40000  Unload C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+75B50000  Unload C:\Windows\system32\psapi.dll
+75B60000  Unload C:\Windows\system32\RPCRT4.dll
+75C10000  Unload C:\Windows\system32\WININET.dll
+75E00000  Unload C:\Windows\system32\MSCTF.dll
+75ED0000  Unload C:\Windows\system32\WLDAP32.dll
+75F20000  Unload C:\Windows\system32\CLBCatQ.DLL
+75FB0000  Unload C:\Windows\system32\ole32.dll
+76110000  Unload C:\Windows\system32\GDI32.dll
+76160000  Unload C:\Windows\system32\OLEAUT32.dll
+76200000  Unload C:\Windows\system32\user32.dll
+762D0000  Unload C:\Windows\system32\ADVAPI32.dll
+76400000  Unload C:\Windows\system32\iertutil.dll
+76640000  Unload C:\Windows\system32\kernel32.dll
+76720000  Unload C:\Windows\system32\normaliz.DLL
+76730000  Unload C:\Windows\SYSTEM32\sechost.dll
+76750000  Unload C:\Windows\system32\LPK.dll
+76760000  Unload C:\Windows\system32\USP10.dll
+76950000  Unload C:\Windows\system32\SHLWAPI.dll
+769B0000  Unload C:\Windows\system32\SETUPAPI.dll
+76B50000  Unload C:\Windows\system32\SHELL32.dll
+777A0000  Unload C:\Windows\system32\msvcrt.dll
+77850000  Unload C:\Windows\SYSTEM32\ntdll.dll
+779D0000  Unload C:\Windows\system32\NSI.dll
+779E0000  Unload C:\Windows\system32\IMM32.DLL
+77A00000  Unload C:\Windows\system32\WS2_32.dll
+          Process terminated
+End of session
+

@@ -1,0 +1,71 @@
+Script started on Wed 10 Apr 2019 12:28:28 PM MDT
+]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ sudo python m12disco.py [9Phutdown -h now[7Pifconfig[K[K[K[K[K[K[K[Kpyt[K[K[Ksudo python m12disco.py [10Pcript m12.logudo python m12disco.py [1P[1P[1P[1P[1P[1P[1P[1@1[1@2[1@d[1@e[1@c[1@o[1@d[1@e[C[C[C
+[sudo] password for user: 
+My IP: 10.187.136.134
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.134
+Proto: ICMP 10.187.136.231 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.253
+Proto: ICMP 10.187.136.23 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.23
+Proto: ICMP 10.187.136.250 -> 10.187.136.134     ICMP -> Type: 3 Code: 3
+Host Up: 10.187.136.250
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.134 -> 10.187.136.134     ICMP -> Type: 3 Code: 1
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+Proto: ICMP 10.187.136.253 -> 10.187.136.134     ICMP -> Type: 8 Code: 0
+^C]0;user@ubuntu: ~/git/jun-w/python/m12[01;32muser@ubuntu[00m:[01;34m~/git/jun-w/python/m12[00m$ exit
+
+Script done on Wed 10 Apr 2019 12:29:33 PM MDT

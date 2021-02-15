@@ -1,0 +1,75 @@
+Problem 7 
+1>Modify m11tcpcli.py  line 5  host ="itss.biomea.com" to host="127.0.0.1"  
+2>On one terminal run proxy program : sudo python m11proxy.py 127.0.0.1 80 itss.biomea.com 80 True
+3>open another terminal, run tcpclient: python m11tcpcli.py
+
+On the terminal running proxy, we received the traffic dump running on the tcp client side.
+First we received 58bytes from tcp client to itss.biomea, which is the request the tcp client
+sent out.
+Then, we received 331bytes from itss.biomea to the tcp client. The data dump shows the content of 
+the webpage sent from itss.biomea.  
+
+
+
+output from tcp client side
+*************************************************************************************
+user@ubuntu:~/git/jun-w/python/m11$ python m11tcpcli.py
+HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2019 04:46:59 GMT
+Server: Apache/2.2.17 (Linux/SUSE)
+Cache-Control: no-store, no-cache
+Connection: close
+Content-Type: text/html
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>ITSC203 echo page</title>
+</head>
+<body>
+
+<br>2019-03-31 22:46:59
+<br>198.48.161.216
+<p>params:</p>
+</body></html>
+
+
+
+output on proxy server side:
+*****************************************************************************************************
+user@ubuntu:~/git/jun-w/python/m11$ sudo python m11proxy.py 127.0.0.1 80 itss.biomea.com 80 True
+[*] Listening on 127.0.0.1:80
+
+[==>] Received incoming connection from 127.0.0.1:46362
+
+[==>] Received 58 bytes from localhost.
+0000   47 45 54 20 2F 63 67 69 2D 62 69 6E 2F 65 63 68    GET /cgi-bin/ech
+0010   6F 2E 63 67 69 20 48 54 54 50 53 2F 31 2E 31 0D    o.cgi HTTPS/1.1.
+0020   0A 48 6F 73 74 3A 20 69 74 73 73 2E 62 69 6F 6D    .Host: itss.biom
+0030   65 61 2E 63 6F 6D 0D 0A 0D 0A                      ea.com....
+[==>] Sent to remote.
+[<==] Received 331 bytes from remote.
+0000   48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D    HTTP/1.1 200 OK.
+0010   0A 44 61 74 65 3A 20 4D 6F 6E 2C 20 30 31 20 41    .Date: Mon, 01 A
+0020   70 72 20 32 30 31 39 20 30 34 3A 34 36 3A 35 39    pr 2019 04:46:59
+0030   20 47 4D 54 0D 0A 53 65 72 76 65 72 3A 20 41 70     GMT..Server: Ap
+0040   61 63 68 65 2F 32 2E 32 2E 31 37 20 28 4C 69 6E    ache/2.2.17 (Lin
+0050   75 78 2F 53 55 53 45 29 0D 0A 43 61 63 68 65 2D    ux/SUSE)..Cache-
+0060   43 6F 6E 74 72 6F 6C 3A 20 6E 6F 2D 73 74 6F 72    Control: no-stor
+0070   65 2C 20 6E 6F 2D 63 61 63 68 65 0D 0A 43 6F 6E    e, no-cache..Con
+0080   6E 65 63 74 69 6F 6E 3A 20 63 6C 6F 73 65 0D 0A    nection: close..
+0090   43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 74 65    Content-Type: te
+00A0   78 74 2F 68 74 6D 6C 0D 0A 0D 0A 0A 3C 68 74 6D    xt/html.....<htm
+00B0   6C 3E 0A 3C 68 65 61 64 3E 0A 3C 6D 65 74 61 20    l>.<head>.<meta
+00C0   63 68 61 72 73 65 74 3D 22 75 74 66 2D 38 22 3E    charset="utf-8">
+00D0   0A 3C 74 69 74 6C 65 3E 49 54 53 43 32 30 33 20    .<title>ITSC203
+00E0   65 63 68 6F 20 70 61 67 65 3C 2F 74 69 74 6C 65    echo page</title
+00F0   3E 0A 3C 2F 68 65 61 64 3E 0A 3C 62 6F 64 79 3E    >.</head>.<body>
+0100   0A 0A 3C 62 72 3E 32 30 31 39 2D 30 33 2D 33 31    ..<br>2019-03-31
+0110   20 32 32 3A 34 36 3A 35 39 0A 3C 62 72 3E 31 39     22:46:59.<br>19
+0120   38 2E 34 38 2E 31 36 31 2E 32 31 36 0A 3C 70 3E    8.48.161.216.<p>
+0130   70 61 72 61 6D 73 3A 3C 2F 70 3E 0A 3C 2F 62 6F    params:</p>.</bo
+0140   64 79 3E 3C 2F 68 74 6D 6C 3E 0A                   dy></html>.
+[<==] Sent to localhost.
+[*] No more data. Closing connections.

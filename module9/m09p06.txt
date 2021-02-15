@@ -1,0 +1,52 @@
+This program is a simple socket server that merely takes in a connection and
+does basic reading and writing. 
+Fire up the server, with the host and port variables set for your environment.
+Once it’s running, run calc.exe onto a remote system.The calculator interface pop up,
+and Python shell server registered a connection and received some data. In order to
+break the recv loop, hit CTRL -C, and it will prompt you to enter a command.
+Try some native Windows shell commands, like, dir. For each command you enter,
+receive its output from the victime machine.
+
+output on server-side after running backdoor_shell.py
+[*] Server bound to 10.0.2.15:4444
+
+The shell code I injected in calc.exe couldnot perform as I expected. 
+When run the calc.exe on victim vm, it can propmt the calculator, however, 
+later, it just terminated the calc.exe. Thus, even the ip address and port bond to the server socket, 
+the server is waiting and listening for the client (calc.exe) making a connection request, 
+on the client-side, the calc.exe couldnot send the request, the connection between 
+server and client was not created.
+
+==============================================================================================
+Backdoor may take the form of a hidden part of a program, a separate program (e.g. Back Orifice may 
+subvert the system through a rootkit), code in the firmware of the hardware,or parts of an operating 
+system such as Windows.
+
+Creating a TCP backdoor using python:
+https://medium.com/@gnsrikanth/creating-a-tcp-backdoor-using-python-9edafc213f91
+step1:TCP server/client
+on server : bind (ip addr, port) ,listen(), connect, send(), recv()
+on client : connect, recv(), send() 
+step2:The subprocess module
+step3: create server that send command to client and receive output.
+use "pyinstaller", to convert .py to .exe.
+pyinstaller --clean -F --distpath=.program.py
+
+What's socket:
+https://docs.oracle.com/javase/tutorial/networking/sockets/definition.html
+Normally, a server runs on a specific computer and has a socket that is bound to a specific port number. 
+The server just waits, listening to the socket for a client to make a connection request.
+
+On the client-side: The client knows the hostname of the machine on which the server is running and 
+the port number on which the server is listening. To make a connection request, the client tries to 
+rendezvous with the server on the server's machine and port. The client also needs to identify itself 
+to the server so it binds to a local port number that it will use during this connection. 
+This is usually assigned by the system. If everything goes well, the server accepts the connection. 
+Upon acceptance, the server gets a new socket bound to the same local port and also has its remote 
+endpoint set to the address and port of the client. It needs a new socket so that it can continue 
+to listen to the original socket for connection requests while tending to the needs of the connected client.
+On the client side, if the connection is accepted, a socket is successfully created and the client can 
+use the socket to communicate with the server.The client and server can now communicate by writing 
+to or reading from their sockets.
+
+

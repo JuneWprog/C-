@@ -1,0 +1,18 @@
+[*]Problem 10:
+Script started on 2019-04-04 23:29:06-0600
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ ls |grep ptmxn -s ./pts/ptmx ./mknode /dev/ptmxc52[12Pcd /devscript log888[6Pcd py11ssh -T -a hacker@192.168.100.130udo python m11sshd.py 192.168.100.130 22[16Prevsshc.pyls[Ksudo python m11revsshc.pysshd.py 192.168.100.130 22
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Psh -T -a hacker@192.168.100.130cd py11[Kscript log888[6Pcd /devmknode /dev/ptmxc52ln -s ./pts/ptmx ./[6Ps |grep ptmx[K[K^C
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ 
+[K]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ python m11p10.py 192.168.100.130 -p 8080 -r 192.168.100.100.[K:80 --user justin --password
+Enter SSH password: 
+Connecting to ssh host 192.168.100.130:22 ...
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:39: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  m.add_string(self.Q_C.public_numbers().encode_point())
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:96: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  self.curve, Q_S_bytes
+/home/ubuntu/.local/lib/python2.7/site-packages/paramiko/kex_ecdh_nist.py:111: CryptographyDeprecationWarning: encode_point has been deprecated on EllipticCurvePublicNumbers and will be removed in a future version. Please use EllipticCurvePublicKey.public_bytes to obtain both compressed and uncompressed point encoding.
+  hm.add_string(self.Q_C.public_numbers().encode_point())
+*** Failed to connect to 192.168.100.130:22: AuthenticationException('Authentication failed.',)
+]0;ubuntu@ubuntu-VirtualBox: ~/py11[01;32mubuntu@ubuntu-VirtualBox[00m:[01;34m~/py11[00m$ exit
+
+Script done on 2019-04-04 23:30:38-0600

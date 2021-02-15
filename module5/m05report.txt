@@ -1,0 +1,81 @@
+
+Problem 4:
+#Place breakpoint just past where you read the current stack pointer, and display the value of registers
+#there.Clear the breakpoint.
+#Disassemble the compiled code using objdump -d or gdb disassemble command, locate the
+#instructions which pass the parameters to function funbot().
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+step1> $compile with command : gcc -Wall -g m05p03.c m05p03
+step2>$gdb m05p03
+step3>(gdb)break 62                //(62 line number)
+step4>(gdb)run 
+step5>(gdb)info registers                //to display the value of registers
+----------------------------------------------------------------------------------
+rax            0x7ffffffff000	140737488351232
+rbx            0x0	0
+rcx            0x18	24
+rdx            0x7fffffffdeb0	140737488346800
+rsi            0x0	0
+rdi            0x7fffffffd840	140737488345152
+rbp            0x7fffffffe020	0x7fffffffe020
+rsp            0x7fffffffde80	0x7fffffffde80
+r8             0x0	0
+r9             0x0	0
+r10            0x7ffff7b845e0	140737349436896
+r11            0x7ffff7b83ce0	140737349434592
+r12            0x400790	4196240
+r13            0x7fffffffe150	140737488347472
+r14            0x0	0
+r15            0x0	0
+rip            0x400a5d	0x400a5d <funbot+393>
+eflags         0x206	[ PF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+---------------------------------------------------------------------------------------
+step6>(gdb) delete 1                 //remove breakpoint "1" means the first breakpoint.
+step7>(gdb) disassemble funbot
+
+instructions which pass the parameters to function funbot()
+---------------------------------------------------------------------------------------
+0x00000000004008df <+11>:	mov    %edi,-0x194(%rbp)
+0x00000000004008e5 <+17>:	mov    %esi,-0x198(%rbp)
+0x00000000004008eb <+23>:	mov    %rdx,-0x1a0(%rbp)
+
+
+
+
+
+Problem 5:
+#Copy the source code from Problem 3, name it m05p04.c, and modify it so that it reliably crashes and
+#generates core dump. Do postmortem analysis using gdb and find out what the locations of stack
+#frames are. Create file m05report.txt and cut and paste your debugger output:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+step1>$compile with command : gcc -Wall -g m05p04.c m05p04
+step2>$gdb m05p04
+
+(gdb) x funtop
+0x400886 <funtop>:	0xe5894855 
+(gdb) disassemble funtop
+0x0000000000400886 <+0>:	push   %rbp
+
+
+(gdb) x funbot
+0x4008c3 <funbot>:	0xe5894855
+(gdb) disassemble funbot
+0x00000000004008c3 <+0>:	push   %rbp
+
+
+(gdb) x main
+0x400b81 <main>:	0xe5894855
+(gdb) disassemble main
+0x0000000000400b81 <+0>:	push   %rbp
+
+#01  0x0000000000400886      in funtop
+#02  0x00000000004008c3      in funbot
+#03  0x0000000000400b81      in main
